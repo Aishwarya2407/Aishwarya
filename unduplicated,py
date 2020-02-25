@@ -1,0 +1,16 @@
+a=int(input())
+b=[]
+d=[]
+for i in range(1,a+1):
+    c=int(input())
+    b.append(c)
+print(b)
+for i in b:
+    print(i)
+    s=b.count(i)
+    d.append(s)
+print(d)
+for i in range(0,len(d)):
+    if i==1:
+        f=d.index(i)
+        print(b[f])
