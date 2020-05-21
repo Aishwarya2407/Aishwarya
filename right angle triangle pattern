@@ -1,0 +1,14 @@
+a=input().strip()
+b=list(a)
+k=['*' for i in range(len(a))]
+b.extend(k)
+c=0
+for i in range(len(a)):
+    for j in range(i+1):
+        print(b[c],end=" ")
+        c+=1
+    print()
+    if c<len(a):
+        continue
+    else:
+        break
